@@ -2,6 +2,7 @@ import React from "react"
 import { ApolloProvider } from "@apollo/client"
 import { BrowserRouter } from "react-router-dom"
 import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles"
+import EditorNew from "./EditorNew"
 import useApolloClient from "./hooks/useApolloClient"
 
 const theme = createMuiTheme({})
@@ -13,7 +14,9 @@ const App = () => {
     <ApolloProvider client={apolloClient}>
       <MuiThemeProvider theme={theme}>
         <BrowserRouter>
-          <div>This is the main App component</div>
+          <div>
+            <EditorNew />
+          </div>
         </BrowserRouter>
       </MuiThemeProvider>
     </ApolloProvider>
