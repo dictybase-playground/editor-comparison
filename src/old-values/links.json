@@ -1,0 +1,35 @@
+{
+  "object": "value",
+  "document": {
+    "object": "document",
+    "nodes": [
+      {
+        "object": "block",
+        "type": "paragraph",
+        "nodes": [
+          {
+            "object": "text",
+            "text": "In addition to block nodes, you can create inline nodes, like "
+          },
+          {
+            "object": "inline",
+            "type": "link",
+            "data": {
+              "href": "https://en.wikipedia.org/wiki/Hypertext"
+            },
+            "nodes": [
+              {
+                "object": "text",
+                "text": "hyperlinks"
+              }
+            ]
+          },
+          {
+            "object": "text",
+            "text": "!"
+          }
+        ]
+      }
+    ]
+  }
+}
