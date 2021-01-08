@@ -1,0 +1,136 @@
+{
+  "object": "value",
+  "document": {
+    "object": "document",
+    "data": {},
+    "nodes": [
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "leaves": [
+              {
+                "object": "leaf",
+                "text": "There is an unordered list below this paragraph.",
+                "marks": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "unordered-list",
+        "data": {},
+        "nodes": [
+          {
+            "object": "block",
+            "type": "list-item",
+            "data": {},
+            "nodes": [
+              {
+                "object": "block",
+                "type": "list-item-child",
+                "data": {},
+                "nodes": [
+                  {
+                    "object": "text",
+                    "leaves": [
+                      {
+                        "object": "leaf",
+                        "text": "Item 1",
+                        "marks": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "object": "block",
+                "type": "unordered-list",
+                "data": {},
+                "nodes": [
+                  {
+                    "object": "block",
+                    "type": "list-item",
+                    "data": {},
+                    "nodes": [
+                      {
+                        "object": "block",
+                        "type": "list-item-child",
+                        "data": {},
+                        "nodes": [
+                          {
+                            "object": "text",
+                            "leaves": [
+                              {
+                                "object": "leaf",
+                                "text": "Subitem 1",
+                                "marks": []
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "object": "block",
+                    "type": "list-item",
+                    "data": {},
+                    "nodes": [
+                      {
+                        "object": "block",
+                        "type": "list-item-child",
+                        "data": {},
+                        "nodes": [
+                          {
+                            "object": "text",
+                            "leaves": [
+                              {
+                                "object": "leaf",
+                                "text": "Subitem 2",
+                                "marks": []
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "object": "block",
+            "type": "list-item",
+            "data": {},
+            "nodes": [
+              {
+                "object": "block",
+                "type": "list-item-child",
+                "data": {},
+                "nodes": [
+                  {
+                    "object": "text",
+                    "leaves": [
+                      {
+                        "object": "leaf",
+                        "text": "Item 2",
+                        "marks": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

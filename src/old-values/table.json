@@ -1,0 +1,160 @@
+{
+  "object": "value",
+  "document": {
+    "object": "document",
+    "data": {},
+    "nodes": [
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "leaves": [
+              {
+                "object": "leaf",
+                "text": "There is a table embedded below.",
+                "marks": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "leaves": [
+              {
+                "object": "leaf",
+                "text": "",
+                "marks": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "table",
+        "data": {},
+        "nodes": [
+          {
+            "object": "block",
+            "type": "table-row",
+            "data": {},
+            "nodes": [
+              {
+                "object": "block",
+                "type": "table-cell",
+                "data": {},
+                "nodes": [
+                  {
+                    "object": "block",
+                    "type": "paragraph",
+                    "data": {},
+                    "nodes": [
+                      {
+                        "object": "text",
+                        "leaves": [
+                          {
+                            "object": "leaf",
+                            "text": "row 1 cell 1",
+                            "marks": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "object": "block",
+                "type": "table-cell",
+                "data": {},
+                "nodes": [
+                  {
+                    "object": "block",
+                    "type": "paragraph",
+                    "data": {},
+                    "nodes": [
+                      {
+                        "object": "text",
+                        "leaves": [
+                          {
+                            "object": "leaf",
+                            "text": "row 1 cell 2",
+                            "marks": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "object": "block",
+            "type": "table-row",
+            "data": {},
+            "nodes": [
+              {
+                "object": "block",
+                "type": "table-cell",
+                "data": {},
+                "nodes": [
+                  {
+                    "object": "block",
+                    "type": "paragraph",
+                    "data": {},
+                    "nodes": [
+                      {
+                        "object": "text",
+                        "leaves": [
+                          {
+                            "object": "leaf",
+                            "text": "row 2 cell 1",
+                            "marks": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "object": "block",
+                "type": "table-cell",
+                "data": {},
+                "nodes": [
+                  {
+                    "object": "block",
+                    "type": "paragraph",
+                    "data": {},
+                    "nodes": [
+                      {
+                        "object": "text",
+                        "leaves": [
+                          {
+                            "object": "leaf",
+                            "text": "row 2 cell 2",
+                            "marks": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

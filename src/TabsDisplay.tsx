@@ -19,6 +19,10 @@ import newLink from "./new-values/link"
 import oldLink from "./old-values/link.json"
 import newVideo from "./new-values/video"
 import oldVideo from "./old-values/video.json"
+import newList from "./new-values/list"
+import oldList from "./old-values/list.json"
+import newTable from "./new-values/table"
+import oldTable from "./old-values/table.json"
 
 const useStyles = makeStyles((theme: Theme) => ({
   root: {
@@ -68,6 +72,8 @@ const TabsDisplay = () => {
           <Tab label="Link" />
           <Tab label="Image" />
           <Tab label="Video" />
+          <Tab label="List" />
+          <Tab label="Table" />
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>
@@ -87,6 +93,12 @@ const TabsDisplay = () => {
       </TabPanel>
       <TabPanel value={value} index={5}>
         <CodeDisplay oldValue={oldVideo} newValue={newVideo} />
+      </TabPanel>
+      <TabPanel value={value} index={6}>
+        <CodeDisplay oldValue={oldList} newValue={newList} />
+      </TabPanel>
+      <TabPanel value={value} index={7}>
+        <CodeDisplay oldValue={oldTable} newValue={newTable} />
       </TabPanel>
     </div>
   )
