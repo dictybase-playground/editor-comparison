@@ -1,18 +1,44 @@
 import React from "react"
 import { ApolloProvider } from "@apollo/client"
 import { BrowserRouter } from "react-router-dom"
-import { Node } from "slate"
 import {
   MuiThemeProvider,
   createMuiTheme,
   makeStyles,
 } from "@material-ui/core/styles"
 import Grid from "@material-ui/core/Grid"
-import EditorNew from "./EditorNew"
+import TabsDisplay from "./TabsDisplay"
 import useApolloClient from "./hooks/useApolloClient"
-import values from "./values"
 
-const theme = createMuiTheme({})
+const theme = createMuiTheme({
+  overrides: {
+    MuiTab: {
+      root: {
+        textTransform: "none",
+      },
+    },
+    MuiTabs: {
+      root: {
+        backgroundColor: "#b6b6b6",
+        color: "#000",
+      },
+      indicator: {
+        backgroundColor: "#858780",
+      },
+    },
+    MuiCssBaseline: {
+      "@global": {
+        a: {
+          textDecoration: "none",
+          color: "#004080",
+          "&:hover": {
+            color: "#001b53",
+          },
+        },
+      },
+    },
+  },
+})
 
 const useStyles = makeStyles({
   container: {
@@ -26,15 +52,14 @@ const useStyles = makeStyles({
 const App = () => {
   const apolloClient = useApolloClient()
   const classes = useStyles()
-  const [value, setValue] = React.useState<Node[]>(values["paragraphs"])
 
   return (
     <ApolloProvider client={apolloClient}>
       <MuiThemeProvider theme={theme}>
         <BrowserRouter>
           <Grid container justify="center" className={classes.container}>
-            <Grid item>
-              <EditorNew value={value} setValue={setValue} />
+            <Grid item xs={10}>
+              <TabsDisplay />
             </Grid>
           </Grid>
         </BrowserRouter>
