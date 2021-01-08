@@ -1,10 +1,8 @@
 import React from "react"
 import Grid from "@material-ui/core/Grid"
-import JSONPretty from "react-json-pretty"
-import { Node } from "slate"
 
 type Props = {
-  newValue: Node[]
+  newValue: object[]
   oldValue: object
 }
 
@@ -13,11 +11,15 @@ const CodeDisplay = ({ oldValue, newValue }: Props) => {
     <Grid container>
       <Grid item xs={6}>
         <strong>Old Value:</strong>
-        <JSONPretty data={oldValue} />
+        <pre style={{ overflowWrap: "break-word" }}>
+          {JSON.stringify(oldValue, null, 2)}
+        </pre>
       </Grid>
       <Grid item xs={6}>
         <strong>New Value:</strong>
-        <JSONPretty data={newValue} />
+        <pre style={{ overflowWrap: "break-word" }}>
+          {JSON.stringify(newValue, null, 2)}
+        </pre>
       </Grid>
     </Grid>
   )

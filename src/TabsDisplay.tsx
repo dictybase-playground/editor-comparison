@@ -6,6 +6,7 @@ import Tab from "@material-ui/core/Tab"
 import Typography from "@material-ui/core/Typography"
 import Box from "@material-ui/core/Box"
 import CodeDisplay from "./CodeDisplay"
+
 import newParagraphs from "./new-values/paragraphs"
 import oldParagraphs from "./old-values/paragraphs.json"
 import newBlockquote from "./new-values/blockquote"
