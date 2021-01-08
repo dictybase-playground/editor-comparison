@@ -1,6 +1,7 @@
 import React from "react"
 import { ApolloProvider } from "@apollo/client"
 import { BrowserRouter } from "react-router-dom"
+import { Node } from "slate"
 import {
   MuiThemeProvider,
   createMuiTheme,
@@ -9,6 +10,7 @@ import {
 import Grid from "@material-ui/core/Grid"
 import EditorNew from "./EditorNew"
 import useApolloClient from "./hooks/useApolloClient"
+import values from "./values"
 
 const theme = createMuiTheme({})
 
@@ -24,6 +26,7 @@ const useStyles = makeStyles({
 const App = () => {
   const apolloClient = useApolloClient()
   const classes = useStyles()
+  const [value, setValue] = React.useState<Node[]>(values["paragraphs"])
 
   return (
     <ApolloProvider client={apolloClient}>
@@ -31,7 +34,7 @@ const App = () => {
         <BrowserRouter>
           <Grid container justify="center" className={classes.container}>
             <Grid item>
-              <EditorNew />
+              <EditorNew value={value} setValue={setValue} />
             </Grid>
           </Grid>
         </BrowserRouter>
